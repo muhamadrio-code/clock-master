@@ -1,1 +1,1 @@
-simple clock with vanilla javascript
+simple clock - vanilla javascript
