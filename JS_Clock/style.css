@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(138, 138, 253);
+}
+
+.clock-face {
+  border: 20px solid rgb(233, 233, 233);
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  margin: 150px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  position: relative;
+  transform: rotate(90deg);
+  background-color: rgb(248, 172, 110);
+  box-shadow: inset 10px 10px 0px 10px rgba(0, 0, 0, 0.1),
+    inset 1px 1px 1px 3px rgba(255, 255, 255, 0.4),
+    10px 10px 0px 3px rgba(0, 0, 0, 0.1);
+  color: white;
+}
+
+.top {
+  position: absolute;
+  left: 10px;
+  font-size: 30px;
+  transform: rotate(270deg);
+}
+
+.right {
+  position: absolute;
+  top: 0;
+  font-size: 30px;
+  transform: rotate(270deg);
+}
+
+.bottom {
+  position: absolute;
+  right: 10px;
+  font-size: 30px;
+  transform: rotate(270deg);
+}
+
+.left {
+  position: absolute;
+  bottom: 0;
+  font-size: 30px;
+  transform: rotate(270deg);
+}
+
+.dot {
+  border: 9px solid rgb(233, 233, 233);
+  border-radius: 50%;
+  z-index: 1;
+  position: absolute;
+  box-shadow: 3px 3px 0px 3px rgba(0, 0, 0, 0.1);
+}
+
+.hours-hand {
+  background-color: rgb(0, 0, 0);
+  width: 80px;
+  position: absolute;
+  left: 50px;
+  padding: 3px;
+}
+
+.mins-hand {
+  background-color: rgb(0, 0, 0);
+  padding: 3px;
+  width: 100px;
+  position: absolute;
+  left: 30px;
+}
+
+.second-hand {
+  background-color: rgb(255, 80, 80);
+  padding: 2px;
+  width: 100px;
+  position: absolute;
+  left: 30px;
+}
+
+.hand {
+  transform-origin: 100%;
+  height: 0;
+  border-radius: 5px;
+}
