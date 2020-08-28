@@ -1,1 +1,1 @@
-# clock-master
+simple clock with vanilla javascript
